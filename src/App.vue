@@ -1,67 +1,96 @@
 <template>
-  <div class="home-page">
-    <div class="color-overlay"></div>
-    <div class="content">
-      
+  <header>
+    <div class="logo">
+      <img src="@/assets/Лого-80_3 1.png">
     </div>
-  </div>
+    <div class="txt">
+      <p><b>Музей Боевой и Трудовой Славы</b><br>город Александров</p>
+    </div>
+  </header>
+  <main>
+    <div class="main">
+      <div class="hoho">
+        <button class="search">
+          <img src="@/assets/Component 3.png">
+          <p>ПОИСК ГЕРОЯ</p>
+        </button>
+        <button class="filter">
+          <img src="@/assets/Property 1=filter.png">
+          <p>ФИЛЬТР</p>
+        </button>
+        <div class="hohp">
+        <p>СТЕНА ПАМЯТИ</p>
+        </div>
+      </div>
+    </div>
+  </main>
+  
 </template>
 
 <script>
-export default {
-  name: 'HomePage'
-}
+
 </script>
 
 <style>
-.home-page {
-  position: relative; 
-  width: 100vw;
-  height: 100vh;
-  min-width: 1920px;
-  min-height: 1080px;
-  overflow: hidden;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  background-image: url('@/assets/Property 1=obl.png');
+body{
+  width: 1920px;
+  height: 1080px;
+  background-image: url('@/assets/photo_2025-03-13_17-35-12.Problembo 1.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  overflow: hidden;
 }
-
-.color-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: #F2E5CC; 
-  opacity: 0.6;
-  z-index: 1; 
+header{
+margin: 48px;  
+display: flex;
+flex-direction: row;
+align-items: center;
 }
-
-.content {
-  position: relative; 
-  z-index: 2; 
+header p{
+  font-size: 3em;
 }
+.logo{
+  margin:44px;
+}
+main{
+  margin: 86px; 
 
-.cta-button {
-  margin-top: 30px;
-  padding: 15px 40px;
-  font-size: 18px;
-  background: #6200ee;
-  color: white;
-  border: none;
-  border-radius: 50px;
+}
+.hoho{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.search{
   cursor: pointer;
-  transition: all 0.3s ease;
+  border: 0 ;
+  background-color: red;
+  width: 280px;
+  height: 69px;
+  padding: 24px 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1em;
+  color:white;
+  
 }
-
-.cta-button:hover {
-  background: #3700b3;
-  transform: translateY(-3px);
-  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+.filter{
+  border: 1px solid;
+  cursor: pointer;
+  padding: 24px 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1em;
+  background: none;
+  width: 280px;
+  height: 69px;
+  margin: 0 16px;
+}
+.hohp{
+  font-size: 3em;
+  color: rgb(114, 114, 114);
 }
 </style>
