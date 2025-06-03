@@ -21,6 +21,11 @@
         <div class="hohp">
         <p>СТЕНА ПАМЯТИ</p>
         </div>
+        <div class="hend">
+          <img src="@/assets/рука.png" width="64px">
+        </div>
+        <div class="dota2">
+        </div>
       </div>
     </div>
   </main>
@@ -40,9 +45,9 @@ body{
   background-position: center;
   background-repeat: no-repeat;
   overflow: hidden;
+  margin: 80px 0px 80px 80px;
 }
 header{
-margin: 48px;  
 display: flex;
 flex-direction: row;
 align-items: center;
@@ -51,16 +56,19 @@ header p{
   font-size: 3em;
 }
 .logo{
-  margin:44px;
+  margin-right: 44px;
 }
-main{
-  margin: 86px; 
+.main{ 
+ /* display: flex; 
+  flex-direction: row;
+  align-items: center;  */
 
 }
 .hoho{
   display: flex;
   flex-direction: row;
   align-items: center;
+  width: 100%;
 }
 .search{
   cursor: pointer;
@@ -92,5 +100,11 @@ main{
 .hohp{
   font-size: 3em;
   color: rgb(114, 114, 114);
+}
+.dota2{
+border: 2px dotted #000; 
+flex: 1;
+size: 20px;
+
 }
 </style>
