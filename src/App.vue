@@ -27,6 +27,49 @@
         <div class="dota2">
         </div>
       </div>
+      <div class="flex_hero">
+        <div class="hero">
+          <img src="@/assets/image (12).png" width="428px" height="571px">
+        </div>
+      <div class="heroes">
+        <div class="hero">
+          <img src="@/assets/image.png" width="208px" height="277px">
+        </div>
+        <div class="hero">
+          <img src="@/assets/image-1.png">
+        </div>
+        <div class="hero">
+          <img src="@/assets/image-2.png">
+        </div>
+        <div class="hero">
+          <img src="@/assets/image-4.png">
+        </div>
+        <div class="hero">
+          <img src="@/assets/image-5.png">
+        </div>
+        <div class="hero">
+          <img src="@/assets/image-6.png">
+        </div>
+        <div class="hero">
+          <img src="@/assets/image-7.png">
+        </div>
+        <div class="hero">
+          <img src="@/assets/image-8.png">
+        </div>
+        <div class="hero">
+          <img src="@/assets/image-9.png">
+        </div>
+        <div class="hero">
+          <img src="@/assets/image-10.png">
+        </div>
+        <div class="hero">
+          <img src="@/assets/image-11.png">
+        </div>
+        <div class="hero">
+          <img src="@/assets/image.png">
+        </div>
+        </div>
+      </div>
     </div>
   </main>
   
@@ -104,7 +147,18 @@ header p{
 .dota2{
 border: 2px dotted #000; 
 flex: 1;
-size: 20px;
-
+}
+.heroes{
+  display: grid;
+  grid-template-columns: repeat(6,1fr);
+  gap: 10px;
+  margin-left: 10px;
+  
+}
+.flex_hero{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+ 
 }
 </style>
